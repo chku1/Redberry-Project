@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>თანამშორმლის ინფო</title>
+</head>
+<body>
+    <div>
+        <h1>თანამშრომლის ინფო</h1>
+        
+        <form action="">
+            <label for="fname">სახელი</label>
+            <input type="text" name="fname" id="fname" placeholder="გრიშა" required minlength="2">
+        
+            <label for="lname">გვარი</label>
+            <input type="text" name="lname" id="lname" placeholder="ბაგრატიონი" required minlength="2">
+        
+            <select name="teams" id="teams" required>
+                <option value="" disabled selected hidden>თიმი</option>
+                <option value="development">დეველოპმენტი</option>
+                <option value="HR">HR</option>
+                <option value="sales">გაყიდვები</option>
+                <option value="design">დიზაინი</option>
+                <option value="marketing">მარკეტინგი</option>
+            </select>
+        
+            <select name="positions" id="positions" required>
+                <option value="" disabled selected hidden>პოზიცია</option>
+                <option value="intern">ინტერნი</option>
+                <option value="HRbus">HR ბიზნეს დეველოპერი</option>
+            </select>
+        
+            <label for="email">მეილი</label>
+            <input type="email" name="email" id="email" placeholder="grish666@redberry.ge" required pattern="[a-z0-9._%+-]+@redberry.ge">
+        
+            <label for="phone">ტელეფონის ნომერი</label>
+            <input type="tel" name="phone" id="phone" placeholder="+995 598 00 07 01" required>
+        
+            <a href="laptopChar.html"><input type="submit"></a>
+        </form>
+    </div>
+    <div>
+        <h1>ლეპტოპის მახასიათებლები</h1>
+
+        <form action="">
+            <input type="file" id="img" name="img">
+
+            <label for="lapName">ლეპტოპის სახელი</label>
+            <input type="text" name="lapName" id="lapName" placeholder="HP" required>
+
+            <select name="lapBrands" id="lapBrands">
+                <option value="" disabled selected hidden>ლეპტოპის ბრენდი</option>
+                <option value="HP">HP</option>
+                <option value="dell">Dell</option>
+                <option value="microsoft">Microsoft</option>
+                <option value="apple">Apple</option>
+                <option value="lenovo">Lenovo</option>
+                <option value="acer">Acer</option>
+            </select>
+
+            <select name="cpu" id="cpu">
+                <option value="" disabled selected hidden>CPU</option>
+                <option value="i3">Intel Core i3</option>
+                <option value="i5">Intel Core i5</option>
+                <option value="i7">Intel Core i7</option>
+                <option value="i9">Intel Core i9</option>
+                <option value="ry3">AMD Ryzen 3</option>
+            </select>
+
+            <label for="cpu_core">CPU-ს ბირთვი</label>
+            <input type="text" name="cpu_core" id="cpu_core" placeholder="14">
+
+            <label for="cpu_thread">CPU-ს ნაკადი</label>
+            <input type="text" name="cpu_thread" id="cpu_thread">
+
+            <label for="ram">ლეპტოპის RAM (GB)</label>
+            <input type="text" name="ram" id="ram" placeholder="16">
+
+            <p>მეხსირების ტიპი</p>
+            <input type="radio" id="SSD" name="mem_type" value="SSD">
+            <label for="SSD">SSD</label>
+            <input type="radio" id="HDD" name="mem_type" value="HDD">
+            <label for="HDD">HDD</label>
+
+            <label for="date">შეძენის რიცხვი (არჩევითი)</label>
+            <input type="date" id="date" name="date" placeholder="დდ/თთ/წწწწ">
+
+            <label for="lap_price">ლეპტოპის ფასი</label>
+            <input type="number" name="lap_price" id="lap_price" placeholder="0000">
+
+            <p>ლეპტოპის მდგომარეობა</p>
+            <input type="radio" id="new" name="lap_cond" value="new">
+            <label for="new">ახალი</label>
+            <input type="radio" id="old" name="lap_cond" value="old">
+            <label for="old">მეორადი</label>
+        </form>
+    </div>
+</body>
+</html>
